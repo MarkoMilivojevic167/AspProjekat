@@ -1,0 +1,8 @@
+C:\AspProjekat\AspProjekat.DataAccess\bin\Debug\netcoreapp3.1\AspProjekat.DataAccess.deps.json
+C:\AspProjekat\AspProjekat.DataAccess\bin\Debug\netcoreapp3.1\AspProjekat.DataAccess.dll
+C:\AspProjekat\AspProjekat.DataAccess\obj\Debug\netcoreapp3.1\AspProjekat.DataAccess.csprojAssemblyReference.cache
+C:\AspProjekat\AspProjekat.DataAccess\obj\Debug\netcoreapp3.1\AspProjekat.DataAccess.AssemblyInfoInputs.cache
+C:\AspProjekat\AspProjekat.DataAccess\obj\Debug\netcoreapp3.1\AspProjekat.DataAccess.AssemblyInfo.cs
+C:\AspProjekat\AspProjekat.DataAccess\bin\Debug\netcoreapp3.1\AspProjekat.DataAccess.runtimeconfig.json
+C:\AspProjekat\AspProjekat.DataAccess\bin\Debug\netcoreapp3.1\AspProjekat.DataAccess.runtimeconfig.dev.json
+C:\AspProjekat\AspProjekat.DataAccess\obj\Debug\netcoreapp3.1\AspProjekat.DataAccess.genruntimeconfig.cache
