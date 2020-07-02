@@ -16,9 +16,9 @@ C:\AspProjekatTest\AspProjekat.Application\bin\Debug\netcoreapp3.1\AspProjekat.A
 C:\AspProjekatTest\AspProjekat.Application\bin\Debug\netcoreapp3.1\AspProjekat.Domain.dll
 C:\AspProjekatTest\AspProjekat.Application\bin\Debug\netcoreapp3.1\AspProjekat.Domain.pdb
 C:\AspProjekatTest\AspProjekat.Application\obj\Debug\netcoreapp3.1\AspProjekat.Application.csprojAssemblyReference.cache
-C:\AspProjekatTest\AspProjekat.Application\obj\Debug\netcoreapp3.1\AspProjekat.Application.csproj.CoreCompileInputs.cache
 C:\AspProjekatTest\AspProjekat.Application\obj\Debug\netcoreapp3.1\AspProjekat.Application.AssemblyInfoInputs.cache
 C:\AspProjekatTest\AspProjekat.Application\obj\Debug\netcoreapp3.1\AspProjekat.Application.AssemblyInfo.cs
 C:\AspProjekatTest\AspProjekat.Application\obj\Debug\netcoreapp3.1\AspProjekat.Application.csproj.CopyComplete
 C:\AspProjekatTest\AspProjekat.Application\obj\Debug\netcoreapp3.1\AspProjekat.Application.dll
 C:\AspProjekatTest\AspProjekat.Application\obj\Debug\netcoreapp3.1\AspProjekat.Application.pdb
+C:\AspProjekatTest\AspProjekat.Application\obj\Debug\netcoreapp3.1\AspProjekat.Application.csproj.CoreCompileInputs.cache

@@ -39,10 +39,10 @@ namespace AspProjekat.Api.Controllers
 
 
         // GET: api/Roles/5
-        [HttpGet("{id}", Name = "GetRole")]
-        public string Get(int id)
+        [HttpGet("{id}", Name = "getOneRole")]
+        public IActionResult Get([FromRoute]int id, [FromServices] IGetOneRoleQuery query)
         {
-            return "value";
+            return Ok(executor.ExecuteQuery(query, id));
         }
 
         // POST: api/Roles

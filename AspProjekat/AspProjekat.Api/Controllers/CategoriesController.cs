@@ -38,10 +38,10 @@ namespace AspProjekat.Api.Controllers
         }
 
         // GET: api/Categories/5
-        [HttpGet("{id}", Name = "GetCategory")]
-        public string Get(int id)
+        [HttpGet("{id}", Name = "getOneCategory")]
+        public IActionResult Get([FromRoute]int id, [FromServices] IGetOneCategoryQuery query)
         {
-            return "value";
+            return Ok(executor.ExecuteQuery(query, id));
         }
 
         // POST: api/Categories
@@ -53,10 +53,10 @@ namespace AspProjekat.Api.Controllers
         }
 
         // PUT: api/Categories/5
-        [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
+        [HttpPut]
+        public void Put([FromForm] CategoryDto dto, [FromServices] IUpdateCategoryCommand command)
         {
-            
+            executor.ExecuteCommand(command, dto);
         }
 
         // DELETE: api/ApiWithActions/5

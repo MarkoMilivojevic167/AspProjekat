@@ -34,7 +34,6 @@ namespace AspProjekat.Application
             TRequest request)
         {
             logger.Log(command, actor, request);
-            // 1 (1,2,3,4)
             if (!actor.AllowedUseCases.Contains(command.Id))
             {
                 throw new UnauthorizedUseCaseException(command, actor);

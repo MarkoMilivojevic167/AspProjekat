@@ -18,5 +18,9 @@
     <ProjectReference Include="..\AspProjekat.Implementation\AspProjekat.Implementation.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="wwwroot\Images\" />
+  </ItemGroup>
+
 
 </Project>

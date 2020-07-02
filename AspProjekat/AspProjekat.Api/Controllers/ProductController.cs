@@ -7,6 +7,7 @@ using AspProjekat.Application.Commands;
 using AspProjekat.Application.DataTransfer;
 using AspProjekat.Application.Queries;
 using AspProjekat.Application.Searches;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -35,13 +36,14 @@ namespace AspProjekat.Api.Controllers
         }
 
         // GET: api/Product/5
-        [HttpGet("{id}", Name = "Get")]
-        public string Get(int id)
+        [HttpGet("{id}", Name = "getOneProduct")]
+        public IActionResult Get([FromRoute]int id, [FromServices] IGetOneProductQuery query)
         {
-            return "value";
+            return Ok(executor.ExecuteQuery(query, id));
         }
 
         // POST: api/Product
+        [Authorize]
         [HttpPost]
         public void Post([FromBody] ProductDto dto,
             [FromServices] ICreateProductCommand command)
@@ -50,12 +52,15 @@ namespace AspProjekat.Api.Controllers
         }
 
         // PUT: api/Product/5
-        [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
+        [Authorize]
+        [HttpPut]
+        public void Put([FromForm] UpdateProductDto dto, [FromServices] IUpdateProductCommand command)
         {
+            executor.ExecuteCommand(command, dto);
         }
 
         // DELETE: api/ApiWithActions/5
+        [Authorize]
         [HttpDelete("{id}")]
         public IActionResult Delete(int id, [FromServices] IDeleteProductCommand command)
         {

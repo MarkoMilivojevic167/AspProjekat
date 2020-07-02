@@ -203,3 +203,5 @@ C:\AspProjekatTest\AspProjekat.Api\bin\Debug\netcoreapp3.1\System.IdentityModel.
 C:\AspProjekatTest\AspProjekat.Api\obj\Debug\netcoreapp3.1\AspProjekat.Api.csproj.CoreCompileInputs.cache
 C:\AspProjekatTest\AspProjekat.Api\obj\Debug\netcoreapp3.1\AspProjekat.Api.MvcApplicationPartsAssemblyInfo.cache
 C:\AspProjekatTest\AspProjekat.Api\bin\Debug\netcoreapp3.1\FluentValidation.dll
+C:\AspProjekatTest\AspProjekat.Api\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Http.Features.dll
+C:\AspProjekatTest\AspProjekat.Api\bin\Debug\netcoreapp3.1\System.IO.Pipelines.dll

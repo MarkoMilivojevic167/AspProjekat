@@ -6,9 +6,11 @@ using System.Threading.Tasks;
 using AspProjekat.Api.Core;
 using AspProjekat.Application;
 using AspProjekat.Application.Commands;
+using AspProjekat.Application.Email;
 using AspProjekat.Application.Queries;
 using AspProjekat.EfDataAccess;
 using AspProjekat.Implementation.Commands;
+using AspProjekat.Implementation.Email;
 using AspProjekat.Implementation.Logging;
 using AspProjekat.Implementation.Queries;
 using AspProjekat.Implementation.Validators;
@@ -55,7 +57,11 @@ namespace AspProjekat.Api
             services.AddTransient<ICreateProductCommand, EfCreateProductCommand>();
             services.AddTransient<IDeleteProductCommand, EfDeleteProductCommand>();
             services.AddTransient<IDeleteCategoryCommand, EfDeleteCategoryCommand>();
-
+            services.AddTransient<IUpdateProductCommand, EfUpdateProductCommand>();
+            services.AddTransient<IUpdateCategoryCommand, EfUpdateCategoryCommand>();
+            services.AddTransient<ICreateOrderCommand, EfCrateOrderCommand>();
+            services.AddTransient<IChangeStatusOrderCommand, EfChangeStatusOrderCommand>();
+            services.AddTransient<IRegisterUserCommand, EfRegisterUserCommand>();
             services.AddHttpContextAccessor();
             services.AddTransient<IApplicationActor>(x =>
             {
@@ -79,12 +85,31 @@ namespace AspProjekat.Api
             services.AddTransient<IGetRolesQuery, EfGetRolesQuery>();
             services.AddTransient<IGetCategoriesQuery, EfGetCateogryQuery>();
             services.AddTransient<IGetProductQuery, EfGetProductQuery>();
+            services.AddTransient<IGetOrdersQuery, EfGetOrderQuery>();
             services.AddTransient<IUseCaseLogger, ConsoleUseCaseLogger>();
+            services.AddTransient<IGetOneOrderQuery, EfGetOneOrderQuery>();
+            services.AddTransient<IGetOneCategoryQuery, EfGetOneCategoryQuery>();
+            services.AddTransient<IGetOneProductQuery, EfGetOneProductQuery>();
+            services.AddTransient<IGetOneUserQuery, EfGetOneUserQuery>();
+            services.AddTransient<IGetOneRoleQuery, EfGetOneRoleQuery>();
+            services.AddTransient<IUploadImageCommand, EfUploadImageCommand>();
+            services.AddTransient<IUseCaseLogger, DatabaseUseCaseLogger>();
+            services.AddTransient<IGetUseCaseQuery, EfGetUseCaseQuery>();
+            services.AddTransient<IGetUserQuery, EfGetUserQuery>();
             services.AddTransient<UseCaseExecutor>();
             services.AddTransient<CreateRoleValidator>();
             services.AddTransient<CreateProductValidator>();
             services.AddTransient<CreateCategoryValidator>();
+            services.AddTransient<UpdateProductValidator>();
+            services.AddTransient<ProductNameValidator>();
+            services.AddTransient<CreateOrderValidator>();
+            services.AddTransient<CreateOrderInfoValidator>();
+            services.AddTransient<RegisterUserValidator>();
+            services.AddTransient<UploudImageValidator>();
+            
             services.AddTransient<JwtManager>();
+
+            services.AddTransient<IEmailSender, SmtpEmailSender>();
 
             services.AddAuthentication(options =>
             {
@@ -124,7 +149,7 @@ namespace AspProjekat.Api
 
             app.UseRouting();
             app.UseMiddleware<GlobalExceptionHandler>();
-
+            app.UseStaticFiles();
             app.UseAuthentication();
             app.UseAuthorization();
 

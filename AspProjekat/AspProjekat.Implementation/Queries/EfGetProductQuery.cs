@@ -24,7 +24,7 @@ namespace AspProjekat.Implementation.Queries
 
         public PageResponse<ProductDto> Execute(ProductSearch search)
         {
-            var query = context.Categories.AsQueryable();
+            var query = context.Products.AsQueryable();
 
             if (!string.IsNullOrEmpty(search.Name) || !string.IsNullOrWhiteSpace(search.Name))
             {
@@ -42,7 +42,12 @@ namespace AspProjekat.Implementation.Queries
                 Items = query.Skip(skipCount).Take(search.PerPage).Select(x => new ProductDto
                 {
                     Id = x.Id,
-                    Name = x.Name
+                    Name = x.Name,
+                    Description=x.Description,
+                    Price = x.Price,
+                    CategoryId = x.CategoryId,
+                    Quantity = x.Quantity
+
                 }).ToList()
             };
 

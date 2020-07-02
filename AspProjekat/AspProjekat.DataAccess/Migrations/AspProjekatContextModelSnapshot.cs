@@ -270,6 +270,30 @@ namespace AspProjekat.EfDataAccess.Migrations
                     b.ToTable("Roles");
                 });
 
+            modelBuilder.Entity("AspProjekat.Domain.Entity.UseCaseLog", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("Actor")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Data")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("Date")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("UseCaseName")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("UseCaseLogs");
+                });
+
             modelBuilder.Entity("AspProjekat.Domain.Entity.User", b =>
                 {
                     b.Property<int>("Id")

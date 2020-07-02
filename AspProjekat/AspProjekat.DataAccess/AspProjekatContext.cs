@@ -33,6 +33,40 @@ namespace AspProjekat.EfDataAccess
             base.OnConfiguring(optionsBuilder);
         }
 
+        public override int SaveChanges()
+        {
+            foreach (var entry in ChangeTracker.Entries())
+            {
+                if (entry.Entity is Entity e)
+                {
+                    switch (entry.State)
+                    {
+                        case EntityState.Added:
+                            e.CreatedAt = DateTime.Now;
+                            e.DeletedAt = null;
+                            e.IsActive = true;
+                            e.IsDeleted = false;
+                            e.ModifiedAt = null;
+                            break;
+                        case EntityState.Modified:
+                            if (e.IsDeleted == true)
+                            {
+                                break;
+                            }
+                            else
+                            {
+                                e.ModifiedAt = DateTime.Now;
+                            }
+                            break;
+
+
+                    }
+
+                }
+            }
+            return base.SaveChanges();
+        }
+
         public DbSet<Role> Roles { get; set; }
         public DbSet<User> Users { get; set; }
         public DbSet<Category> Categories { get; set; }
@@ -40,5 +74,6 @@ namespace AspProjekat.EfDataAccess
         public DbSet<Order> Orders { get; set; }
         public DbSet<OrderInfo> OrderInfo { get; set; }
         public DbSet<Product> Products { get; set; }
+        public DbSet<UseCaseLog> UseCaseLogs { get; set; }
     }
 }
