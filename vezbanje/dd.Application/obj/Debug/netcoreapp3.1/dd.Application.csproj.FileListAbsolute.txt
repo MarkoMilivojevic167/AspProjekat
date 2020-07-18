@@ -1,0 +1,12 @@
+C:\Users\marko\source\repos\dd\dd.Application\bin\Debug\netcoreapp3.1\dd.Application.deps.json
+C:\Users\marko\source\repos\dd\dd.Application\bin\Debug\netcoreapp3.1\dd.Application.dll
+C:\Users\marko\source\repos\dd\dd.Application\bin\Debug\netcoreapp3.1\dd.Application.pdb
+C:\Users\marko\source\repos\dd\dd.Application\bin\Debug\netcoreapp3.1\EfDataAccess.dll
+C:\Users\marko\source\repos\dd\dd.Application\bin\Debug\netcoreapp3.1\EfDataAccess.pdb
+C:\Users\marko\source\repos\dd\dd.Application\obj\Debug\netcoreapp3.1\dd.Application.csprojAssemblyReference.cache
+C:\Users\marko\source\repos\dd\dd.Application\obj\Debug\netcoreapp3.1\dd.Application.csproj.CoreCompileInputs.cache
+C:\Users\marko\source\repos\dd\dd.Application\obj\Debug\netcoreapp3.1\dd.Application.AssemblyInfoInputs.cache
+C:\Users\marko\source\repos\dd\dd.Application\obj\Debug\netcoreapp3.1\dd.Application.AssemblyInfo.cs
+C:\Users\marko\source\repos\dd\dd.Application\obj\Debug\netcoreapp3.1\dd.Application.csproj.CopyComplete
+C:\Users\marko\source\repos\dd\dd.Application\obj\Debug\netcoreapp3.1\dd.Application.dll
+C:\Users\marko\source\repos\dd\dd.Application\obj\Debug\netcoreapp3.1\dd.Application.pdb

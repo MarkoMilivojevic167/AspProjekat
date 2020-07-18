@@ -1,0 +1,6 @@
+Scaffold-DbContext 'Data Source=DESKTOP-P6DG4R7\MARKOSQL;Initial Catalog=Chinook;Integrated Security=True' Microsoft.EntityFrameworkCore.SqlServer
+
+
+izaberi BLANK
+
+kod apija odcekiraj http
