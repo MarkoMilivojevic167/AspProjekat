@@ -1,0 +1,71 @@
+<urlset 
+xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<url>
+	<loc>http://marcofashion.000webhostapp.com/index.html</loc>
+	<lastmod>2018-08-11T13:50:20+00:00</lastmod>
+	<changefreq>monthly</changefreq>
+	<priority>1.00</priority>
+</url>
+<url>	
+	<loc>http://marcofashion.000webhostapp.com/mmeni.html</loc>
+	<lastmod>2018-08-11T13:50:20+00:00</lastmod>
+	<changefreq>monthly</changefreq>
+	<priority>0.90</priority>
+</url>
+<url>
+	<loc>http://marcofashion.000webhostapp.com/wmeni.html</loc>
+	<lastmod>2018-08-11T13:50:20+00:00</lastmod>
+	<changefreq>monthly</changefreq>
+	<priority>0.80</priority>
+</url>
+<url>
+	<loc>http://marcofashion.000webhostapp.com/kontakt.html</loc>
+	<lastmod>2018-08-11T13:50:21+00:00</lastmod>
+	<changefreq>monthly</changefreq>
+	<priority>0.80</priority>
+</url>
+<url>
+	<loc>http://marcofashion.000webhostapp.com/autor.html</loc>
+	<lastmod>2018-08-11T13:50:21+00:00</lastmod>
+	<changefreq>monthly</changefreq>
+	<priority>0.70</priority>
+</url>
+<url>
+	<loc>http://marcofashion.000webhostapp.com/muskarci.html</loc>
+	<lastmod>2018-08-11T13:50:21+00:00</lastmod>
+	<changefreq>monthly</changefreq>
+	<priority>0.70</priority>
+</url>
+<url>
+	<loc>http://marcofashion.000webhostapp.com/mobuca.html</loc>
+	<lastmod>2018-08-11T13:50:21+00:00</lastmod>
+	<changefreq>monthly</changefreq>
+	<priority>0.60</priority>
+</url>
+<url>
+	<loc>http://marcofashion.000webhostapp.com/ma.html</loc>
+	<lastmod>2018-08-11T13:50:21+00:00</lastmod>
+	<changefreq>monthly</changefreq>
+	<priority>0.60</priority>
+</url>
+<url>
+	<loc>http://marcofashion.000webhostapp.com/zobuca.html</loc>
+	<lastmod>2018-08-11T13:50:21+00:00</lastmod>
+	<changefreq>monthly</changefreq>
+	<priority>0.50</priority>
+</url>
+<url>
+	<loc>http://marcofashion.000webhostapp.com/zene.html</loc>
+	<lastmod>2018-08-11T13:50:21+00:00</lastmod>
+	<changefreq>monthly</changefreq>
+	<priority>0.50</priority>
+</url>
+<url>
+	<loc>http://marcofashion.000webhostapp.com/za.html</loc>
+	<lastmod>2018-08-11T13:50:21+00:00</lastmod>
+	<changefreq>monthly</changefreq>
+	<priority>0.40</priority>
+</url>
+</urlset>

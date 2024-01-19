@@ -1,0 +1,1227 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	border-radius:5px;
+}
+
+body, input, textarea{
+	font-family: 'Roboto Condensed', sans-serif;
+	color: rgb(35,31,32);
+}
+
+a {
+	color: rgb(35,31,32);
+	text-decoration: none;
+}
+ul {
+	list-style-type: none;
+
+}
+
+.cistac {
+	clear: both;
+}
+
+.omotac {
+	width: 1200px;
+	margin: 0px auto;
+}
+#zaglavljeDole {
+	width: 100%;
+	height: auto;
+	background-color: #fff;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+#zaglavljeDole .omotac {
+		padding: 10px 20px;
+}
+#logo {
+	width: 25%;
+	float: left;
+}
+#meni {
+	width: 75%;
+	float: left;
+}
+
+#meni ul {
+
+	list-style-type: none;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	transition: all 0.4s;
+	
+}
+
+#meni ul li {
+	font-size: 18px;
+	padding:20px;
+}
+#slajder {
+
+	width: 100%;
+	min-height:900px;
+	background-image: url('../images/aa.jpg');
+	background-repeat: no-repeat;
+	position: relative;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	background-size: cover !important;
+	border-radius:0px;
+	
+}
+#kolekcija h2{
+	text-align:center;
+	margin-top:250px;
+	color:#ffffff;
+	font-size:70px;
+	font-weight:bold;
+}
+#kolekcija p{
+	color:#ffffff;
+	text-align:center;
+	font-size:30px;
+	margin:0px;
+	word-spacing: 15px;
+}
+#slajder .omotac {
+	height: 100%;
+	
+
+}
+#mySidenav a {
+	
+    position: fixed;
+    left: -60px;
+    transition: 0.3s;
+    padding: 15px;
+    width: 100px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #ffffff;
+    border-radius: 0 5px 5px 0;
+	z-index:8;
+}
+#mySidenav i:nth-child(2){
+	margin-left:30px;
+}
+#mySidenav a:hover {
+    left: 0;
+}
+
+#contact {
+    top: 200px;
+    background-color: rgb(35,31,32);
+}
+#brend {
+	width:100%;
+	background-color:#fff;
+	height:auto;
+	text-align:center;
+	margin-bottom:20px;
+	padding:50px;
+		display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+#brend h1{
+	padding:40px;
+	font-size:40px;
+}
+#brend p{
+	padding:10px;
+	font-size:16px;
+}
+
+#kartica{
+	width:100%;
+	height:400px;
+	background-color:#fff;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	z-index:1;
+	margin-bottom:100px;
+}
+#kartical{
+	float:left;
+	width:48%;
+	height:300px;
+	padding:50px;
+	position:relative;
+}
+#kartical img{
+	width:100%;
+	height:auto;
+	border-radius:18px;
+	
+}
+#ktekst{
+	float:right;
+	width:48%;
+	height:500px;
+	padding:140px 0px;
+
+}
+
+
+#ktekst p{
+	font-size:17px;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+#kartical:hover .image {
+  opacity: 0.3;
+}
+
+#kartical:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color: #fff;
+  color: rgb(35,31,32);
+  font-size: 16px;
+  padding: 16px 32px;
+  border-radius:10px;
+}
+footer{
+	margin-top:180px;
+	width: 100%;
+	height: 250px;
+	background-color:rgb(231,231,233);
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	border-radius:0px;
+}
+.mb1{
+	margin-top:0px;
+}
+#desno{
+	width:100%;
+	height:auto;
+	display:block;
+	padding:50px;
+}
+#forma input[type=text] {
+	margin-top:25px;
+    width: 250px;
+	border:0px;
+    border-radius: 4px;
+    font-size: 12px;
+    background-color:#ffffff;
+    background-image: url('../images/pretraga.png');
+    background-position: 3px 1px; 
+    background-repeat: no-repeat;
+    padding: 10px 20px 10px 40px;
+}
+#forma{
+	width:100%;
+	text-align:center;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+#fafaikonice{
+	text-align:center;
+	width:100%;
+}
+#fafaikonice a i {
+	display: inline-block;
+	margin: 0px 20px;
+	font-size:25px;
+	text-align:center;
+	color:rgb(35,31,32);
+}
+#dolef{
+	width:100%;
+	height:50px;
+	background-color:rgb(35,31,32);
+	border-radius:0px;
+}
+#dolef p{
+	color:#ffffff;
+	text-align:center;
+	font-size:13px;
+	padding:16px;
+}
+#fafaikonice i.fa:hover {
+	color:#ffffff;
+}
+.mslika{
+	width: 100%;
+	height: 215px;
+	background-image: url('../images/slajder2.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	text-align:center;
+	z-index:2;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	position:relative;
+}
+.mslika h1{
+	position:absolute;
+	top:30%;
+	color:#fff;
+	font-size:60px;
+}
+#brendovi {
+	width: 100%;
+	margin: 30px 0px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+#brendovi .brend {
+	width: 30%;
+	margin:1%;
+	text-align: center;
+	padding:15px 0px;
+	transition: box-shadow 0.5s;
+	margin-top:80px;
+	position:relative;
+}
+
+.sl {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.proizvod {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+#kartical:hover .sl {
+  opacity: 0.3;
+}
+
+.brend:hover .proizvod {
+  opacity: 1;
+}
+
+.kupi {
+  background-color:rgb(35,31,32);
+  color: #ffffff;
+  font-size: 16px;
+  padding: 16px 32px;
+  border-radius:6px;
+}
+#brendovi .brend img {
+	max-width: 250px;
+	display: inline;
+}
+.starac{
+	font-weight: normal;
+    font-size: 18px;
+    color: #424242;
+    text-decoration: line-through;
+
+}
+.novac{
+	font-weight: normal;
+    font-size: 18px;
+    color:rgb(35,31,32);
+	font-weight:bold;
+}
+#kontakt{
+	width:100%;
+	min-height:400px;
+	background-color:#ffffff;
+	margin-top:60px;
+}
+#klevo{
+	width:49%;
+	height:400px;
+	border-right:1px solid rgb(231,231,233);
+	float:left;
+}
+#kdesno{
+	width:49%;
+	height:330px;
+	float:right;
+	height:400px;
+}
+.kfa{
+	width:100%;
+	height:50px;
+	display:flex;
+	flex-wrap:wrap;
+	margin-top:50px;
+	padding-top:30px;
+}
+.kfa i{
+	background-color:rgb(35,31,32);
+	color: #ffffff;
+	font-size: 25px;
+	width: 42px;
+	height: 42px;
+	border-radius:50%;
+	text-align: center;
+	line-height: 42px;
+	margin: -8px 15px;
+}
+#forma1{
+	width: 100%;
+	margin-right: 10%;
+	padding-top:30px;
+}
+
+#forma1 input, #forma1 textarea {
+	width: 100%;
+	display: block;
+	padding: 10px;
+	margin-bottom: 15px;
+	border: none;
+	background-color: rgb(231,231,233);
+	color: rgb(35,31,32);
+	font-size: 15px;
+	border-radius:2px;
+}
+
+#forma1 input[type="text"]{
+	width: 100%;
+	display: inline-block;
+	font-size: 15px;
+}
+
+#forma1 ::placeholder {
+	color: rgb(35,31,32);
+}
+#forma1 input[type="submit"]{
+	background-color: rgb(35,31,32);
+	color: #fff;
+}
+/* Bordered form */
+#lr{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+#formal {
+    border: 3px solid #f1f1f1;
+	width:45%;
+	margin:100px auto;
+}
+
+/* Full-width inputs */
+#formal input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+#formal button {
+    background-color: rgb(35,31,32);
+    color: #ffffff;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+	opacity: 0.9;
+}
+
+/* Add a hover effect for buttons */
+#formal button:hover {
+    opacity: 1;
+}
+
+/* Extra style for the cancel button (red) */
+#formal .cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+}
+
+/* Center the avatar image inside this container */
+#formal .imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+	font-size:150px;
+	color:rgb(35,31,32);
+}
+
+
+/* Add padding to containers */
+#formal .container {
+    padding: 21px;
+}
+
+/* The "Forgot password" text */
+#formal span.psw {
+    float: right;
+    padding-top: 16px;
+}
+#f2{
+    border: 3px solid #f1f1f1;
+	width:45%;
+	margin:100px auto;
+}
+.container {
+    padding: 21px;
+    background-color:#ffffff;
+}
+.container input[type=text], .container input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+}
+
+.container input[type=text]:focus, .container  input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+.registerbtn {
+    background-color:rgb(35,31,32);
+    color:#ffffff;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+}
+
+.registerbtn:hover {
+    opacity: 1;
+}
+#tekst {
+	width: 50%;
+	position: absolute;
+	top: 80%;
+	left: 25%;
+	text-align: center;
+}
+#tekst a {
+	padding: 20px 30px;
+	border-radius: 10px;
+	color:rgb(255, 255, 255);
+	font-size:20px;
+	background-color:rgba(45, 45, 45, 0.01);
+	border:1px solid white;
+	transition: all 0.5s;
+}
+#tekst a:hover {
+	background-color:rgb(255, 255, 255);
+	color:rgb(45, 45, 45);
+}
+/* Dropdown Button */
+
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.4);
+    z-index: 55;
+	animation-duration: 0.5s;
+	width:650px;
+	height:215px;
+	padding:20px;
+	left:-300px;
+
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+	margin-top:12px;
+    color:rgb(35,31,32);
+    padding: 12px 20px;
+    text-decoration: none;
+    display: block;
+	width:100%;
+	font-size: 15px;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    	display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+
+.menis{
+	float:right;
+	width:65%;
+}
+.pmeni{
+	float:left;
+	width:35%;
+}
+.menis img{
+	width:100%;
+	height:auto;
+}
+#mmeni {
+	width: 100%;
+	margin: 30px 0px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+#mmeni .mmeni1 {
+	width: 30%;
+	margin:1%;
+	text-align: center;
+	padding:15px 0px;
+	position:relative;
+	box-sizing: border-box;
+}
+#mmeni .mmeni1 img {
+	max-width: 100%;
+	display: inline;
+		display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	box-sizing: border-box;
+}
+#mmeni .mmeni1 a{
+	position:absolute;
+	top:40%;
+	left:32%;
+	padding: 15px 30px;
+	border-radius: 5px;
+	color:rgb(255, 255, 255);
+	font-size:20px;
+	background-color:rgba(45, 45, 45, 0.01);
+	border:1.5px solid white;
+	transition: all 0.5s;
+	
+}
+#mmeni a:hover {
+	background-color:rgb(255, 255, 255);
+	color:rgb(45, 45, 45);
+}
+#tabela{
+	overflow-x:auto;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 96%;
+    border:none;
+	margin:0px auto;
+	margin-top:20px;
+	overflow-x:auto;
+}
+
+th, td {
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even){
+background-color: #f2f2f2
+}
+#tgore,#tdole{
+	margin-top:40px;
+	margin-left:30px;
+}
+#tgore p,#tdole p{
+	font-size:16px;
+	color:rgb(35,31,32);
+	margin-top:30px;
+}
+#tdole h3{
+	margin-top:30px;
+	font-size:30px;
+}
+#tabela p{
+	color:rgb(35,31,32);
+	font-size:12px;
+	margin-left:30px;
+	margin-top:10px;
+}
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  margin: 0 -16px;
+  margin-top:50px;
+}
+
+.col-25 {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+}
+
+.col-50 {
+  -ms-flex: 50%; /* IE10 */
+  flex: 10%;
+}
+
+.col-75 {
+  -ms-flex: 75%; /* IE10 */
+  flex: 75%;
+}
+.col-50,
+.col-75 {
+  padding: 0 16px;
+}
+.container1 {
+  background-color: #f2f2f2;
+  padding: 5px 20px 15px 20px;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+}
+
+.row input[type=text] {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+label {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.icon-container {
+  margin-bottom: 20px;
+  padding: 7px 0;
+  font-size: 24px;
+}
+
+.btn {
+  background-color:rgb(35,31,32);
+  color: #ffffff;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  width: 100%;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 17px;
+}
+
+.btn:hover {
+  background-color: #45a049;
+}
+
+hr {
+  border: 1px solid lightgrey;
+}
+
+span.price {
+  float: right;
+  color: rgb(231,231,233);
+}
+
+#a{
+	width:100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	margin-top:100px;
+}
+#sl{
+	width:45%;
+	height:auto;
+	margin-left:50px;
+}
+#st{
+	position:absolute;
+	top:-150px;
+	left:-170px;
+	font-size:50px;
+	font-weight:bold;
+	text-align:left;
+}
+#sd{
+	width:40%;
+	height:auto;
+	margin-top:210px;
+	margin-right:50px;
+	position:relative;
+}
+#sl img{
+	width:100%;
+	height:auto;	
+	position:relative;
+}
+#sd img{
+	width:100%;
+	height:auto;
+	position:relative;
+}
+.tacka1{
+	position:absolute;
+	width:25px;
+	height:25px;
+	border-radius:50%;
+	background-color:#ffffff;
+	top:36%;
+	left:34%;
+}
+.tacka2{
+	position:absolute;
+	width:25px;
+	height:25px;
+	border-radius:50%;
+	background-color:#ffffff;
+	top:28%;
+	left:36%;
+}
+.tacka3{
+	position:absolute;
+	width:25px;
+	height:25px;
+	border-radius:50%;
+	background-color:#ffffff;
+	top:29%;
+	left:29%;
+}
+.tac1 {
+    position: relative;
+    display: inline-block;
+	top:-140px;
+	left:303px;
+}
+.tac2{
+	position: relative;
+    display: inline-block;
+	top:-463px;
+	left:333px;
+}
+.tac3{
+	position: relative;
+    display: inline-block;
+	top:-400px;
+	left:249px;
+}
+.plus{
+	text-align:center;
+	padding:2px;
+}
+
+.lista {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.lista p{
+	text-align:center;
+	padding:10px;
+	font-size:17px;
+	color:rgb(35,31,32);
+}
+.lista a p{
+	padding:10px 15px;
+	background-color:rgb(35,31,32);
+	color:#ffffff;
+}
+
+
+.tac1:hover .lista {
+    display: block;
+}
+.tac2:hover .lista {
+    display: block;
+}
+.tac3:hover .lista {
+    display: block;
+}
+
+#prijavise{
+	width: 100%;
+	height: 350px;
+	background-image: url('../images/i.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	z-index:5;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	box-sizing: border-box;
+	background-position: 50% 50% !important;
+	margin:150px 0px;
+	border-radius:0px;
+
+}
+#text input[type=email]{
+	background-color:transparent;
+	border:1.5px solid #ffffff;
+	width:300px;
+	height:50px;
+	color:#ffffff;
+	font-size:18px;
+	
+} 
+#text input[type=button]{
+	width:100px;
+	height:52px;
+	background-color:#ffffff;
+	border:none;
+} 
+#text{
+	margin-top:150px;
+}
+#prijavise p{
+	color:#ffffff;
+	margin-top:160px;
+	font-size:20px;
+}
+#text ::placeholder{
+	color:#ffffff;
+	padding-left:20px;
+}
+#autor{
+	margin-top:100px;
+	text-align:center;
+	width:100%;
+	height:auto;
+}
+#autor img{
+	border-radius:50%;
+	padding:30px;
+	width:30%;
+}
+#autor h2{
+	font-size:30px;
+}
+#autor p{
+	font-size:16px;
+	padding-top:30px;
+}
+#links{
+	font-size:18px;
+	color:rgb(35,31,32);
+	font-weight:bold;
+	display:none;
+}
+#menidole{
+	text-align:center;
+	width:100%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	margin:20px auto;
+}
+#menidole ul li {
+	display: inline-block;
+	margin: 0px 20px;
+	font-size:19px;
+	text-align:center;
+	color:rgb(35,31,32);
+}
+#googleMap {
+    width: 100%;
+    height: 250px;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+	margin-top:60px;
+}
+@media screen and (max-width: 1200px){
+	.omotac {
+		width: 100%;
+		padding: 30px 30px;
+	}
+	.kategorija .kategorijaTekst {
+		font-size: 21px;
+	}
+	#kartica{
+		display:block
+	}
+	#kartical{
+		width:100%;
+		height:300px;
+	}
+	#links{
+		display:inline;
+	}
+	#kartical img{
+		width:70%;
+		margin:0px auto;
+}
+	#ktekst{
+		width:100%;
+		font-size:16px;
+	}
+	#brendovi .brend{
+		width:48%;
+	}
+}
+@media screen and (max-width: 1100px){
+	#kartical img{
+	height:auto;
+	}
+	.tac1 {
+		top:-102px;
+		left:238px;
+	}
+	.tac2{
+		top:-445px;
+		left:257px;
+	}
+	.tac3{
+		top:-355px;
+		left:200px;
+	}
+}
+@media screen and (max-width: 970px){
+	#logo {
+		width: 35%;
+	}
+	#meni {
+		width: 65%;
+	}
+	#kolekcija p {
+		font-size: 27px;
+	}
+	#kolekcija h2{
+		font-size:65px;
+	}
+	#prijavise{
+		display:none;
+	}
+	#klevo{
+		border-right:none;
+		width:100%;
+	}
+	.kfa {
+		text-align:center;
+		display:block;
+	}
+	.kfa p{
+		padding-top:10px;
+	}
+	#kdesno{
+		width:100%;
+	}
+	#f2{
+		width:90%;
+	}
+	#formal{
+		Width:90%;
+	}
+	.tac1 {
+		top:-102px;
+		left:259px;
+	}
+	.tac2{
+		top:-332px;
+		left:248px;
+	}
+	.tac3{
+		top:-247px;
+		left:198px;
+	}
+@media screen and (max-width: 800px){
+	.fa-shopping-bag,span, .dropdown:hover .dropdown-content{
+		display:none;
+	}
+	#kolekcija p {
+		font-size: 25px;
+	}
+	#kolekcija h2{
+		font-size:60px;
+	}
+	.row {
+		flex-direction: column-reverse;
+	}
+	.col-25 {
+	}
+	#a{
+		display:block;
+	}
+	#sl{
+		width:80%;
+		margin:0px auto;
+	}
+	#sd{
+		width:80%;
+		margin:0px auto;
+	}
+	#st{
+		top:-120%;
+		left:25%;
+	}
+	#meni ul li {
+	font-size: 16px;
+	padding:18px;
+}
+	#mmeni .mmeni1 a{
+		top:40%;
+		left:20%;
+		padding: 10px 20px;
+	}
+	.tac1, .tac2, .tac3{
+		display:none;
+	}
+@media screen and (max-width: 720px){
+	#zaglavljeDole {
+		height: auto;
+	}
+	#logo, #meni {
+		width: 100%;
+	}
+	#meni {
+		padding: 20px 10px;
+	}
+	#meni ul {
+		height: auto;
+		width:100%;
+	}
+	#logo {
+		padding: 20px 0px 0px 0px;
+		text-align: center;
+	}
+	#slajder {
+		margin: 0px 0px 30px 0px;
+	}
+	#kolekcija p {
+		font-size: 19px;
+	}
+	#kolekcija h2{
+		font-size:50px;
+	}
+	
+	#slajder {
+		background-position: top right;
+	}
+	.middle {
+		top: 52%;
+	}
+	#brendovi .brend{
+		width:100%;
+	}
+	#mmeni{
+		display:block;
+	}
+	.mmeni1{
+		margin:0px auto !important;
+	}
+	#mmeni .mmeni1{
+		width:65%;
+	}
+	#mmeni .mmeni1 a{
+		top:40%;
+		left:37%;
+	}
+	#menidole ul li {
+		font-size:16px;
+	}
+
+
+@media screen and (max-width: 480px) {
+	#zaglavljeDole .omotac{
+		padding: 20px 30px 0px;
+	}
+	#logo {
+		padding: 0px;
+	}
+	#meni ul {
+		flex-direction: column;
+		display: block;
+		text-align:center;
+	}
+	#kolekcija p {
+		font-size: 16px;
+	}
+	#kolekcija h2{
+		font-size:40px;
+	}
+	#tekst a {
+	padding: 10px 20px;
+	font-size:16px;
+	}
+	#st{
+		display:none;
+	}
+	#brend h1{
+		padding:30px;
+		font-size:30px;
+	}
+	#brend p{
+		padding:5px;
+		font-size:14px;
+	}
+		#ktekst{
+		font-size:14px;
+		padding:0px;
+
+	}
+	.middle{
+		display:none;
+	}
+	#forma input[type=text] {
+		width: 200px;
+	}
+	#fafaikonice a i{
+		font-size:18px;
+	}
+	#dolef{
+		font-size:10px;
+		height:auto;
+	}
+	#mmeni .mmeni1 a{
+		left:25%;
+		font-size:13px;
+	}
+	#menidole{
+		display:none;
+	}
+}

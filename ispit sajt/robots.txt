@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Disallow: /images/
+Sitemap: http://http://bdizajn.byethost5.com/sitemap.xml

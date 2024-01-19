@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Kontakt</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Kontaktirajte nas">
+	<meta name="keywords" content="kontakt,autoru,aksesoari,početna,žene">
+	<meta name="author" content="">
+	<meta name="robots" content="index, follow">
+	<link rel="icon" href="images/favicon.ico">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+	<link rel="stylesheet" type="text/css" href="css/style.css"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="UTF-8">
+</head>
+<body>
+		<div id="zaglavljeDole">
+			<div class="omotac">
+				<div id="logo">
+					<a href="index.html"><img src="images/logo.jpg" alt="logo"/></a>
+				</div>
+				<div id="meni">
+					<ul>
+						<li ><a href="index.html">Početna</a></li>
+						<li><div class="dropdown">
+							<a href="mmeni.html">Muškarci</a>	
+							<div class="dropdown-content">
+								<div class="pmeni">
+									<a href="muskarci.html">Odeća</a>
+									<a href="mobuca.html">Obuća</a>
+									<a href="ma.html">Aksesoari</a>
+								</div>
+								<div class="menis" >
+									<img src="images/men.jpg" alt="slika"/>
+								</div>
+							</div>
+						</div>
+						</li>
+						<li>
+						<div class="dropdown">
+						<a href="wmeni.html">Žene</a>	
+						<div class="dropdown-content">
+						<div class="pmeni">
+									<a href="zene.html">Odeća</a>
+									<a href="zobuca.html">Obuća</a>
+									<a href="za.html">Aksesoari</a>
+						</div>
+						<div class="menis" >
+							 <img src="images/woman.jpg" alt="slika"/>
+							</div>
+						</div>
+						</div>	
+						</li>
+						<li ><a href="kontakt.html">Kontakt</a></li>
+						<li ><a href="autor.html">O autoru</a></li>
+						<li ><i class="fa fa-shopping-bag"></i>
+							<span> 0 RSD </span>
+						</li>		
+					</ul>
+				</div>
+				<div class="cistac"></div>
+			</div>
+		</div>
+		<div id="kontakt">
+			<div class="omotac">
+				<div id="klevo">
+					<div class="kfa">
+						<i class="fa fa-map-marker"></i>
+						<p>Smederevska Palanka,Srbija</p>
+					</div>
+					<div class="kfa">
+						<i class="fa fa-phone"></i>
+						<p>063-111-1111</p>
+					</div>
+					<div class="kfa">
+						<i class="fa fa-envelope"></i>
+						<p>marko.milivojevic.167.17@ict.edu.rs</p>
+					</div>
+				</div>
+				<div id="kdesno">
+					<div id="forma1">
+						<form action="#" method="GET">
+							<input type="text" name="tbName" id="tbName" placeholder="Ime.." />
+							<input type="text" name="tbSubject" id="tbSubject" placeholder="Prezime.." />
+							<textarea id="tbBody" name="tbBody" placeholder="Poruka.." rows="7"></textarea>
+							<input type="submit" id="tbSend" name="tbSend" value="Pošalji"/>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="googleMap"></div>
+		<script>
+		function myMap() {
+		var myCenter = new google.maps.LatLng(44.3653555, 20.9589208);
+		var mapProp = {center:myCenter, zoom:12, scrollwheel:false, draggable:false, mapTypeId:google.maps.MapTypeId.ROADMAP};
+		var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+		var marker = new google.maps.Marker({position:myCenter});
+		marker.setMap(map);
+		}
+		</script>
+		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBUvSNWgVU3Fuo7gTQGTSN_-BeXU1o6T4Y&callback=myMap"></script>
+		<footer  class="mb1">
+		<div class="omotac">
+			<div id="desno">
+				<div id="fafaikonice">
+					<ul>
+						<a href="https://www.facebook.com/marko.milivojevic.921"><i class="fa fa-facebook"></i></a>
+						<a href="https://www.instagram.com/marko_milivojevic/"><i class="fa fa-instagram"></i></a>
+						<a href="rss.xml"><i class="fa fa-rss-square"></i></a>
+						<a href="sitemap.xml"><i class="fa fa-sitemap"></i></a>
+					</ul>
+				</div>
+				<form id="forma">
+					<input type="text" name="search" placeholder="Pretraži.."/>
+				</form>
+				<div id="menidole">
+					<ul>
+						<li ><a href="index.html">Početna</a></li>
+						<li><a href="mmeni.html">Muškarci</a></li>
+						<li><a href="wmeni.html">Žene</a></li>
+						<li ><a href="kontakt.html">Kontakt</a></li>
+						<li ><a href="autor.html">O autoru</a></li>
+						<li><a href="less.txt">Less</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</footer>
+			<div id="dolef">
+				<p>&copy; Copyright. All rights reserved | Designed by Marko Milivojević</p>
+			</div>
+
+</body>
+</html>

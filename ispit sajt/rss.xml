@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+	<channel>
+		<item>
+			<title>MARCO Fashion</title>
+			<description>Izrada web sajtova.</description>
+			<link>http://marcofashion.000webhostapp.com/index.html</link>
+		</item>	
+		<item>
+			<title>O autoru</title>
+			<description>Možete pročitati stvari vezane za autora sajta</description>
+			<link>http://marcofashion.000webhostapp.com/autor.html</link>
+		</item>
+		<item>
+			<title>Ženska kolekcija</title>
+			<description>Izašla je nova ženska kolekcija</description>
+			<link>http://marcofashion.000webhostapp.com/wmeni.html</link>
+		</item>
+		<item>
+			<title>Muška kolekcija</title>
+			<description>Izašla je nova muška kolekcija</description>
+			<link>http://marcofashion.000webhostapp.com/mmeni.html</link>
+		</item>
+	</channel>
+</rss>
